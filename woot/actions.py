@@ -345,7 +345,7 @@ class ConversationsActions:
     )
     filter: Action = field(
         default_factory=lambda: action_factory(
-            method="GET",
+            method="POST",
             url="api/v1/accounts/{account_id}/conversations/filter",
             query=ws.ApiV1AccountsAccountIdConversationsFilterPostParametersQuery,
             schema_=ws.ApiV1AccountsAccountIdConversationsFilterPostRequest,
