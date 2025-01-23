@@ -278,7 +278,7 @@ class ContactsActions:
     )
     filter: Action = field(
         default_factory=lambda: action_factory(
-            method="GET",
+            method="POST",
             url="api/v1/accounts/{account_id}/contacts/filter",
             schema_=ws.ApiV1AccountsAccountIdContactsFilterPostRequest,
             query=ws.ApiV1AccountsAccountIdContactsFilterPostParametersQuery,
